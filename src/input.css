@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+
+
+/* -------------------------------------------------- */
+@font-face {
+    font-family: yekan;
+    src: url("/src/assets/font/yekan-font/yekan-regular.woff");
+    src: url("/src/assets/font/yekan-font/yekan-regular.ttf");
+}
+
+* {
+    font-family: yekan;
+    box-sizing: border-box;
+}
+button , a{
+    cursor: pointer;
+}
