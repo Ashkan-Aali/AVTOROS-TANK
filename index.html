@@ -87,30 +87,34 @@
             <!-- circles -->
             <div class="flex items-center md:gap-3">
                 <div
-                    class="flex flex-col items-center justify-center w-20 h-20 border-4 border-white md:border-orange-400 rounded-full text-white">
-                    <span class="text-2xl font-bold">3</span>
-                    <span class="text-xs mt-1">day</span>
+                    class="relative flex flex-col items-center justify-center w-[5.3rem] h-[5.3rem] rounded-full text-white bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)]">
+                    <div class="absolute w-20 h-20 rounded-full bg-[#252C2C]"></div>
+                    <span class="z-10 text-2xl font-bold">3</span>
+                    <span class="z-10 text-xs mt-1">day</span>
                 </div>
 
                 <span class="text-white text-3xl font-bold">:</span>
                 <div
-                    class="flex flex-col items-center justify-center w-20 h-20 border-4 border-white md:border-orange-400 rounded-full text-white">
-                    <span class="text-2xl font-bold">06</span>
-                    <span class="text-xs mt-1">hours</span>
+                    class="relative flex flex-col items-center justify-center w-[5.3rem] h-[5.3rem] rounded-full text-white bg-[conic-gradient(#FF9549_0%_50%,#444_50%_100%)]">
+                    <div class="absolute w-20 h-20 rounded-full bg-[#252C2C]"></div>
+                    <span class="z-10 text-2xl font-bold">06</span>
+                    <span class="z-10 text-xs mt-1">hours</span>
                 </div>
 
                 <span class="text-white text-3xl font-bold">:</span>
                 <div
-                    class="flex flex-col items-center justify-center w-20 h-20 border-4 border-white md:border-orange-400 rounded-full text-white">
-                    <span class="text-2xl font-bold">14</span>
-                    <span class="text-xs mt-1">minutes</span>
+                    class="relative flex flex-col items-center justify-center w-[5.3rem] h-[5.3rem] rounded-full text-white bg-[conic-gradient(#FF9549_0%_23%,#444_23%_100%)]">
+                    <div class="absolute w-20 h-20 rounded-full bg-[#252C2C]"></div>
+                    <span class="z-10 text-2xl font-bold">14</span>
+                    <span class="z-10 text-xs mt-1">minutes</span>
                 </div>
 
                 <span class="text-white text-3xl font-bold">:</span>
                 <div
-                    class="flex flex-col items-center justify-center w-20 h-20 border-4 border-white md:border-orange-400 rounded-full text-white">
-                    <span class="text-2xl font-bold">55</span>
-                    <span class="text-xs mt-1">seconds</span>
+                    class="relative flex flex-col items-center justify-center w-[5.3rem] h-[5.3rem] rounded-full text-white bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)]">
+                    <div class="absolute w-20 h-20 rounded-full bg-[#252C2C]"></div>
+                    <span class="z-10 text-2xl font-bold">55</span>
+                    <span class="z-10 text-xs mt-1">seconds</span>
                 </div>
             </div>
 
@@ -158,9 +162,24 @@
     <!-- end secondPage .
      and start The third page  -->
     <div class="bg-[#1C2121] h-auto md:min-h-dvh w-full flex flex-col items-center justify-center">
-        <div class="w-full flex flex-col gap-4 md:w-[75%]">
-            <div class="grid items-center gap-4 grid-cols-3">
-                <div class="flex flex-col gap-6 col-span-1">
+        <div class="w-4/5 flex flex-col gap-4 md:w-[75%] pb-4">
+            <div class="grid items-center gap-4 grid-cols-1 md:grid-cols-3">
+                <!-- image Section -->
+                <div class="relative md:col-start-2 md:col-span-2">
+                    <img src="src/assets/image/redCar-big.png" alt="">
+                    <span
+                        class="absolute hidden md:block bg-[#FF9549] top-1/12 right-1/12 p-2 text-xs font-bold rounded-md transform rotate-[30deg] w-20">5
+                        cars left
+                        at a special price</span>
+                    <div class="absolute flex flex-col gap-1.5 right-[-5%] md:right-0 top-1 md:top-1/3">
+                        <button><i class="fas fa-circle-check text-[#EF2929]"></i></button><button><i
+                                class="fas fa-circle text-[#DF4C30]"></i></button><button><i
+                                class="fas fa-circle text-[#C6C9CE]"></i></button><button><i
+                                class="fas fa-circle border-[1px] rounded-full border-amber-50"></i></button><button><i
+                                class="fas fa-circle text-[#C6C9CE]"></i></button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 md:row-start-1 md:col-span-1">
                     <div class="flex flex-col w-3/5">
                         <span class="text-[#FF9549] text-[0.9rem]">Only in AUTORUS!</span>
                         <span class="text-white font-bold text-lg">TANK 300</span>
@@ -169,7 +188,9 @@
                                 class="fas fa-skull-crossbones px-3"></i>Limited
                             offer!<i class="fas fa-skull-crossbones px-3"></i></span>
                     </div>
-                    <div class="flex flex-col gap-2 w-4/5">
+
+                    <!-- button Section -->
+                    <div class="flex flex-col gap-2 w-full md:w-4/5">
                         <button class="text-xs bg-[#FF9549] py-2 rounded-md ">Find out the price of the promotion<i
                                 class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
                         <button class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2">Test drive<i
@@ -178,15 +199,9 @@
                             loan<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
                     </div>
                 </div>
-                <div class="relative col-span-2">
-                    <img src="src/assets/image/redCar-big.png" alt="">
-                    <span
-                        class="absolute bg-[#FF9549] top-1/12 right-1/12 p-2 text-xs font-bold rounded-md transform rotate-[30deg] w-20">5
-                        cars left
-                        at a special price</span>
-                </div>
+
             </div>
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div class="bg-[#181818] text-white rounded-md px-4 py-2 flex items-center text-[0.9rem]"><span><i
                             class="fas fa-clipboard-check text-[#FF9549] mx-2 text-lg"></i></span>
                     <span>Cars in stock
@@ -211,6 +226,95 @@
                     src="src/assets/image/image 289.png" alt="">
             </div>
         </div>
+    </div>
+
+    <!--end third page .
+     and start The fourth page -->
+    <div id="mainFourthPage"
+        class="relative bg-[#252C2C] h-auto md:min-h-dvh w-full flex flex-col items-center justify-center">
+        <div class="w-4/5 flex flex-col gap-4 md:w-[75%] pb-4">
+            <div class="grid items-center gap-4 grid-cols-1 md:grid-cols-3">
+
+                <!-- image Section -->
+                <div class="relative md:col-span-2">
+                    <a href="#modalGallery"><img src="src/assets/image/big-grayCar.png" alt=""></a>
+                    <span
+                        class="absolute hidden md:block bg-[#FF9549] top-1/12 right-1/12 p-2 text-xs font-bold rounded-md transform rotate-[30deg] w-20">5
+                        cars left
+                        at a special price</span>
+                    <div class="absolute flex flex-col gap-1.5 left-[-5%] md:left-0 top-1 md:top-1/3">
+                        <button><i class="fas fa-circle-check text-[#B0A798]"></i></button><button><i
+                                class="fas fa-circle text-[#E6E7E8]"></i></button><button><i
+                                class="fas fa-circle text-[#A2A4AB]"></i></button><button><i
+                                class="fas fa-circle border-[1px] rounded-full text-[#212329] border-amber-50"></i></button><button><i
+                                class="fas fa-circle text-[#C6C9CE]"></i></button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 md:col-span-1">
+                    <div class="flex flex-col w-3/5">
+                        <span class="text-[#FF9549] text-[0.9rem]">Only in AUTORUS!</span>
+                        <span class="text-white font-bold text-lg">TANK 300</span>
+                        <span class="text-white">Trade-In benefit up to 450,000 ₽</span>
+                        <span class="bg-[#FF2B00] rounded-lg text-xs px-3 text-white w-fit"><i
+                                class="fas fa-skull-crossbones px-3"></i>Limited
+                            offer!<i class="fas fa-skull-crossbones px-3"></i></span>
+                    </div>
+
+                    <!-- button Section -->
+                    <div class="flex flex-col gap-2 w-full md:w-4/5">
+                        <button class="text-xs bg-[#FF9549] py-2 rounded-md ">Find out the price of the promotion<i
+                                class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                        <button class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2">Test drive<i
+                                class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                        <button class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2">Calculate
+                            loan<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-[#181818] text-white rounded-md px-4 py-2 flex items-center text-[0.9rem]"><span><i
+                            class="fas fa-clipboard-check text-[#FF9549] mx-2 text-lg"></i></span>
+                    <span>Cars in stock
+                        with PTS</span></div>
+                <div class="bg-[#181818] text-white rounded-md px-4 py-2 flex items-center text-[0.9rem]"><span><i
+                            class="fas fa-certificate text-[#FF9549] mx-2 text-lg"></i></span>
+                    <span>Service support
+                        up to 5 years / 150,000 km</span></div>
+                <div class="bg-[#181818] text-white rounded-md px-4 py-2 flex items-center text-[0.9rem]"><span><i
+                            class="fas fa-tag text-[#FF9549] mx-2 text-lg"></i></span>
+                    <span> We will
+                        improve any
+                        offer</span></div>
+                <div class="bg-[#181818] text-white rounded-md px-4 py-2 flex items-center text-[0.9rem]"><span><i
+                            class="fab fa-salesforce text-[#FF9549] mx-2 text-lg"></i></span>
+                    <span> Credit
+                        0.01%</span></div>
+            </div>
+            <div class="grid grid-cols-5 gap-3">
+                <img src="src/assets/image/gray/image 285.png" alt=""><img src="src/assets/image/gray/image 286.png"
+                    alt=""><img src="src/assets/image/gray/image 287.png" alt=""><img
+                    src="src/assets/image/gray/image 288.png" alt=""><img src="src/assets/image/gray/image 289.png"
+                    alt="">
+            </div>
+        </div>
+        <!-- modal gallery -->
+         <div id="modalGallery" class="fixed inset-0 items-center justify-center hidden z-50 target:flex">
+             <div id=""
+                 class="absolute w-full h-full flex flex-col justify-center items-center gap-4 bg-[#181818] opacity-95">
+                 <a href="#mainFourthPage" class="absolute right-12 top-8 text-white"><i
+                         class="fas fa-xmark text-4xl"></i></a>
+                 <div class="w-3/5 h-3/5">
+                     <img src="src/assets/image/Modal-gallery/image 294.png" alt="" class="h-full w-full object-cover">
+                 </div>
+                 <div class="w-3/5 grid gap-2 grid-cols-5">
+                     <img src="src/assets/image/Modal-gallery/image 285.png" alt=""><img
+                         src="src/assets/image/Modal-gallery/image 286.png" alt=""><img
+                         src="src/assets/image/Modal-gallery/image 287.png" alt=""><img
+                         src="src/assets/image/Modal-gallery/image 288.png" alt=""><img
+                         src="src/assets/image/Modal-gallery/image 289.png" alt="">
+                 </div>
+             </div>
+         </div>
     </div>
 
 

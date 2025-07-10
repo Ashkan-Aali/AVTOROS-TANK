@@ -13,6 +13,7 @@
 * {
     font-family: yekan;
     box-sizing: border-box;
+    transition: ease 2s all;
 }
 
 button , a{
