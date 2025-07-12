@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TANK</title>
     <link rel="stylesheet" href="src/input.css">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/assets/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="icon" href="favicon.ICO">
 </head>
 
 <body>
     <!-- first page -->
-    <section class="bg-[#181818] h-auto md:h-dvh">
+    <section class="bg-[#181818] h-auto md:h-dvh relative">
 
         <!-- header section -->
         <header class="h-[10dvh] md:h-[13dvh] flex justify-center mb-1">
@@ -51,12 +52,100 @@
                     </div>
                 </div>
                 <!-- icon in moblie menu -->
-                <div class="md:hidden mr-3 flex gap-4">
-                    <span class="transform rotate-x-[30]"><i class="fas fa-phone-volume text-white"></i></span>
-                    <span><i class="fas fa-bars text-white"></i></span>
+                <div class="md:hidden mr-3 flex gap-4 relative">
+                    <a class="transform rotate-x-[30]"><i class="fas fa-phone-volume text-white"></i></a>
+                    <a href="#modalMenu"><i class="fas fa-bars text-white"></i></a>
                 </div>
             </div>
         </header>
+
+        <!-- MODAL MENU IN MOBILE -->
+
+        <!-- header section in modal -->
+        <aside id="modalMenu" class="bg-[#181818] h-auto hidden fixed inset-0 target:flex flex-col z-50">
+            <div class="h-[10dvh] flex justify-center mb-1">
+                <div class="h-full flex items-center w-full">
+                    <img src="src/assets/image/Clip path group.png" class="logo h-4/6 ml-4" alt="">
+                    <div class="h-full flex flex-col justify-around w-full">
+                        <div class="border-b border-gray-500  justify-between p-2 hidden md:flex">
+                            <span class="text-[#939697] text-xs"><i
+                                    class="fas fa-location-dot text-xs mr-1"></i>Yaroslavskoe shosse, property 2B,
+                                building
+                                3 (MKAD, 95
+                                km)</span>
+                            <div class="flex gap-8">
+                                <a class="text-white text-xs"><i class="fas fa-envelope text-amber-600 mr-1"></i>Sign up
+                                    for
+                                    service</a>
+                                <a class="text-white text-xs"><i class="fas fa-paperclip text-amber-600 mr-1"></i>Test
+                                    drive</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex flex-col md:block">
+                                <span
+                                    class="font-bold text-xs md:text-xl text-white md:border-r border-gray-500 px-2">AVTORUS
+                                    TANK <span class="font-normal md:hidden pl-1"> Elk Island</span></span>
+                                <span class="text-[#939697] text-[0.6rem] md:text-xs pl-2">Official dealer</span>
+                            </div>
+                            <div class="gap-4 items-center hidden md:flex">
+                                <div class="flex flex-col">
+                                    <span class="text-white">+7 (999) 999-99-99</span>
+                                    <span class="text-[#939697] text-[0.6rem]"><i
+                                            class="fas fa-circle text-green-500 text-[0.4rem] mr-[0.2rem]"></i>We are in
+                                        touch</span>
+                                </div>
+                                <button class="bg-[#FF9549] h-1/2 py-0.5 px-4 rounded-lg"><i
+                                        class="fas fa-phone mr-2 text-xs"></i>Request a call</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- icon in moblie menu -->
+                    <div class="md:hidden mr-3 flex gap-4 relative">
+                        <a href="#" class="transform rotate-x-[30]"><i class="fas fa-phone-volume text-white"></i></a>
+                        <a href="#"><i class="fas fa-x text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class=" border-b-[1px] border-[#939697] flex-col justify-between py-10 px-4">
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-white font-semibold text-xs">AVTORUS TANK Losiny Ostrov</span><span
+                            class="text-[#939697] text-[0.6rem]">Official dealer</span>
+                    </div>
+                    <span class="text-[#939697] text-xs"><i class="fas fa-location-dot text-xs mr-1"></i>Yaroslavskoe
+                        shosse, property 2B, building
+                        3 (MKAD, 95
+                        km)</span>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-[#939697] text-[0.6rem]">Official dealer</span><span
+                            class="text-white font-semibold text-xs">OOO A AVTORUS MYTISHCHI | OGRN -
+                            1147746695161, INN -
+                            7728881903</span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 h-fit mt-12 md:mt-0">
+                    <div class="gap-4 md:items-center flex md:flex-row flex-col">
+                        <div class="flex flex-col">
+                            <span class="text-white">+7 (999) 999-99-99</span>
+                            <span class="text-[#939697] text-[0.6rem]"><i
+                                    class="fas fa-circle text-green-500 text-[0.4rem] mr-[0.2rem]"></i>We are in
+                                touch</span>
+                        </div>
+                        <button class="bg-[#FF9549] md:h-1/2 py-2 md:py-0.5 px-4 rounded-lg"><i
+                                class="fas fa-phone mr-2 text-xs"></i>Request a call</button>
+                    </div>
+                    <div class="flex gap-8 flex-col md:flex-row items-center md:justify-end">
+                        <a class="text-white md:text-xs"><i class="fas fa-wrench text-amber-600 mr-1.5"></i>Sign
+                            up for
+                            service</a>
+                        <a class="text-white md:text-xs"><i class="fab fa-algolia text-amber-600 mr-1.5"></i>Test
+                            drive</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- END MODAL -->
 
         <!-- main section -->
         <main class="grow relative">
@@ -375,7 +464,7 @@
                             <div class="flex flex-col">
                                 <span class="text-white text-2xl font-bold">TANK 300</span>
                                 <span class="text-[#939697] md:text-xs">2.0 l. Petrol, Full, Automatic</span>
-                                <span class="text-white text-xl mt-3">3 649 000 ₽</span>
+                                <span class="text-white text-xl mt-3"><s>3 649 000 ₽</s></span>
                             </div>
                             <div class="md:flex flex-col gap-1 hidden">
                                 <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
@@ -407,7 +496,7 @@
                             <div class="flex flex-col">
                                 <span class="text-white text-2xl font-bold">TANK 300</span>
                                 <span class="text-[#939697] md:text-xs">2.0 l. Petrol, Full, Automatic</span>
-                                <span class="text-white text-xl mt-3">3 649 000 ₽</span>
+                                <span class="text-white text-xl mt-3"><s>3 649 000 ₽</s></span>
                             </div>
                             <div class="md:flex flex-col gap-1 hidden">
                                 <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
@@ -439,7 +528,7 @@
                             <div class="flex flex-col">
                                 <span class="text-white text-2xl font-bold">TANK 300</span>
                                 <span class="text-[#939697] md:text-xs">2.0 l. Petrol, Full, Automatic</span>
-                                <span class="text-white text-xl mt-3">3 649 000 ₽</span>
+                                <span class="text-white text-xl mt-3"><s>3 649 000 ₽</s></span>
                             </div>
                             <div class="md:flex flex-col gap-1 hidden">
                                 <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
@@ -543,14 +632,16 @@
      and start The last  page -->
 
     <section
-        class="bg-[#181818] h-auto md:min-h-dvh w-full flex flex-col items-center gap-8 justify-center px-[16rem] py-4">
-        <!-- MAP SECTION -->
+        class="bg-[#181818] h-auto md:min-h-dvh w-full flex flex-col items-center gap-8 justify-center px-3 md:px-[16rem] py-4">
+        MAP SECTION
 
-        <div class="relative">
-            <img src="src/assets/image/Map-image.png" alt="">
+        <div class="relative w-full">
+            <img src="src/assets/image/Map-image.png" alt="" class="hidden md:flex">
+            <img src="src/assets/image/moblie-map.png" alt="" class="md:hidden object-cover h-4/5 w-full">
+            <img src="src/assets/image/vtnrf.png" alt="" class="absolute z-10 -translate-x-1/2 top-1/5 left-1/2">
             <div
-                class="absolute z-10 bg-[#1C2121] grid grid-cols-5 items-center gap-4 w-4/5 rounded-xl transform -translate-x-1/2 left-1/2 right-1/2 bottom-[5%] px-4 py-2">
-                <div class="flex flex-col col-span-2">
+                class="absolute z-10 bg-[#1C2121] grid grid-cols-1 md:grid-cols-5 items-center gap-4 w-4/5 rounded-xl transform -translate-x-1/2 left-1/2 right-1/2 b top-[60%] md:bottom-[5%] px-4 py-2">
+                <div class="flex flex-col md:col-span-2">
                     <span class="text-[#939697] text-xs">Address</span>
                     <span class="text-white">Yaroslavskoe shosse, property 2B, building 3 (MKAD, 95 km)</span>
                 </div>
@@ -567,16 +658,17 @@
                         from 09:00 to 21:00</span>
                 </div>
                 <div>
-                    <button class="text-xs bg-[#FF9549] py-2 rounded-md h-fit md:w-fit px-6">Request a call<i
+                    <button class="text-xs bg-[#FF9549] py-2 rounded-md h-fit w-full md:w-fit px-6">Request a call<i
                             class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
                 </div>
             </div>
         </div>
+
         <!-- FOOTER SECTION -->
         <footer>
-            <div class="pt-16">
+            <div class="pt-24 md:pt-16">
                 <input type="checkbox" id="toggle" class="peer hidden">
-                <label for="toggle" class="text-white font-semibold cursor-pointer">Disclaimer <i
+                <label for="toggle" class="text-white font-semibold cursor-pointer">Disclaimer<i
                         class="fas fa-chevron-up ml-3 text-xs peer-checked:rotate-180 transform"></i></label>
                 <div class="border-b-[1px] border-[#939697] peer-checked:max-h-0 max-h-screen overflow-hidden">
                     <p class="text-[#939697] text-xs pt-6 pb-10">
@@ -595,44 +687,48 @@
                     </p>
                 </div>
             </div>
-            <div class="border-b-[1px] border-[#939697] flex justify-between py-10">
+            <div class="border-b-[1px] border-[#939697] flex md:flex-row flex-col justify-between py-10">
                 <div class="flex flex-col gap-6">
                     <div class="flex flex-col gap-0.5">
-                        <span class="text-white font-semibold text-xs">AVTORUS TANK Losiny Ostrov</span><span class="text-[#939697] text-[0.6rem]">Official dealer</span>
+                        <span class="text-white font-semibold text-xs">AVTORUS TANK Losiny Ostrov</span><span
+                            class="text-[#939697] text-[0.6rem]">Official dealer</span>
                     </div>
                     <span class="text-[#939697] text-xs"><i class="fas fa-location-dot text-xs mr-1"></i>Yaroslavskoe
                         shosse, property 2B, building
                         3 (MKAD, 95
                         km)</span>
                     <div class="flex flex-col gap-0.5">
-                        <span class="text-[#939697] text-[0.6rem]">Official dealer</span><span class="text-white font-semibold text-xs">OOO A AVTORUS MYTISHCHI | OGRN - 1147746695161, INN -
+                        <span class="text-[#939697] text-[0.6rem]">Official dealer</span><span
+                            class="text-white font-semibold text-xs">OOO A AVTORUS MYTISHCHI | OGRN - 1147746695161, INN
+                            -
                             7728881903</span>
                     </div>
                 </div>
-                <div class="flex flex-col gap-5 h-fit">
-                    <div class="gap-4 items-center hidden md:flex">
+                <div class="flex flex-col gap-5 h-fit mt-8 md:mt-0">
+                    <div class="gap-4 md:items-center flex md:flex-row flex-col">
                         <div class="flex flex-col">
                             <span class="text-white">+7 (999) 999-99-99</span>
                             <span class="text-[#939697] text-[0.6rem]"><i
                                     class="fas fa-circle text-green-500 text-[0.4rem] mr-[0.2rem]"></i>We are in
                                 touch</span>
                         </div>
-                        <button class="bg-[#FF9549] h-1/2 py-0.5 px-4 rounded-lg"><i
+                        <button class="bg-[#FF9549] md:h-1/2 py-2 md:py-0.5 px-4 rounded-lg"><i
                                 class="fas fa-phone mr-2 text-xs"></i>Request a call</button>
                     </div>
-                    <div class="flex gap-8 justify-end">
-                        <a class="text-white text-xs"><i class="fas fa-wrench text-amber-600 mr-1"></i>Sign up for
+                    <div class="flex gap-8 flex-col md:flex-row items-center md:justify-end">
+                        <a class="text-white md:text-xs"><i class="fas fa-wrench text-amber-600 mr-1.5"></i>Sign up for
                             service</a>
-                        <a class="text-white text-xs"><i class="fab fa-algolia text-amber-600 mr-1"></i>Test
+                        <a class="text-white md:text-xs"><i class="fab fa-algolia text-amber-600 mr-1.5"></i>Test
                             drive</a>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-between text-[#939697] text-xs pt-4 pb-2">
-                <span>© 2024, AVTORUS TANK</span>
+            <div class="flex flex-col md:flex-row justify-between text-[#939697] text-xs pt-4 pb-2">
+                <span class="hidden md:flex">© 2024, AVTORUS TANK</span>
                 <div class="flex justify-between gap-6">
                     <span>Legal information</span><span>Conditions of the promotion</span>
                 </div>
+                <span class="md:hidden mt-1.5">© 2024, AVTORUS TANK</span>
             </div>
         </footer>
     </section>
