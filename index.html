@@ -52,8 +52,8 @@
                 </div>
                 <!-- icon in moblie menu -->
                 <div class="md:hidden mr-3 flex gap-4">
-                    <span class="transform rotate-x-[30]"><i class="fas fa-phone-volume text-xs text-white"></i></span>
-                    <span><i class="fas fa-bars text-xs text-white"></i></span>
+                    <span class="transform rotate-x-[30]"><i class="fas fa-phone-volume text-white"></i></span>
+                    <span><i class="fas fa-bars text-white"></i></span>
                 </div>
             </div>
         </header>
@@ -67,7 +67,7 @@
                     <h1 class="font-bold text-5xl">TANK 500</h1>
                     <span class="text-lg">Only 5 cars left!</span>
                 </div>
-                <button class="bg-[#FF9549] py-1 px-8 rounded-lg md:w-fit w-full">Get an offer<i
+                <button class="bg-[#FF9549] py-2 px-10 rounded-lg md:w-fit w-full">Get an offer<i
                         class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
             </div>
         </main>
@@ -76,16 +76,17 @@
     <!-- end first page ,
      start page 2 -->
 
-    <div class="w-full h-auto flex flex-col items-center bg-[#181818] p-6  md:min-h-dvh text-xs md:text-[1rem]">
+
+    <section class="w-full h-auto flex flex-col items-center bg-[#181818] p-6  md:min-h-dvh text-xs md:text-[1rem]">
         <!-- timer section -->
 
         <div
             class="flex flex-col md:flex-row gap-4 bg-[#252C2C] p-4  rounded-xl w-full md:w-[75%] items-center md:justify-between">
-            <span class="text-white font-bold md:text-xl">Validity period <br>
+            <span class="text-white text-4xl font-bold md:text-xl">Validity period <br class="hidden md:block">
                 special offers:</span>
 
             <!-- circles -->
-            <div class="flex items-center md:gap-3">
+            <div class="flex items-center gap-0.5 md:gap-3">
                 <div
                     class="relative flex flex-col items-center justify-center w-[5.3rem] h-[5.3rem] rounded-full text-white bg-[conic-gradient(#FF9549_0%_90%,#444_90%_100%)]">
                     <div class="absolute w-20 h-20 rounded-full bg-[#252C2C]"></div>
@@ -119,7 +120,7 @@
             </div>
 
 
-            <button class="bg-[#FF9549] py-1 px-4 rounded-lg">Find out the price with benefits<i
+            <button class="bg-[#FF9549] w-4/5 md:w-fit py-2 px-10 md:px-4 rounded-lg">Find out the price with benefits<i
                     class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
         </div>
         <!-- The main part of page two -->
@@ -157,11 +158,12 @@
                 <img src="src/assets/image/small-grayCar.png" alt="" class="w-1/3 md:w-1/2">
             </div>
         </div>
-    </div>
+    </section>
+
 
     <!-- end secondPage .
      and start The third page  -->
-    <div class="bg-[#1C2121] h-auto md:min-h-dvh w-full flex flex-col items-center justify-center">
+    <section class="bg-[#1C2121] h-auto md:min-h-dvh w-full flex flex-col items-center justify-center">
         <div class="w-4/5 flex flex-col gap-4 md:w-[75%] pb-4">
             <div class="grid items-center gap-4 grid-cols-1 md:grid-cols-3">
                 <!-- image Section -->
@@ -226,11 +228,12 @@
                     src="src/assets/image/image 289.png" alt="">
             </div>
         </div>
-    </div>
+    </section>
+
 
     <!--end third page .
      and start The fourth page -->
-    <div id="mainFourthPage"
+    <section id="mainFourthPage"
         class="relative bg-[#252C2C] h-auto md:min-h-dvh w-full flex flex-col items-center justify-center">
         <div class="w-4/5 flex flex-col gap-4 md:w-[75%] pb-4">
             <div class="grid items-center gap-4 grid-cols-1 md:grid-cols-3">
@@ -298,24 +301,341 @@
             </div>
         </div>
         <!-- modal gallery -->
-         <div id="modalGallery" class="fixed inset-0 items-center justify-center hidden z-50 target:flex">
-             <div id=""
-                 class="absolute w-full h-full flex flex-col justify-center items-center gap-4 bg-[#181818] opacity-95">
-                 <a href="#mainFourthPage" class="absolute right-12 top-8 text-white"><i
-                         class="fas fa-xmark text-4xl"></i></a>
-                 <div class="w-3/5 h-3/5">
-                     <img src="src/assets/image/Modal-gallery/image 294.png" alt="" class="h-full w-full object-cover">
-                 </div>
-                 <div class="w-3/5 grid gap-2 grid-cols-5">
-                     <img src="src/assets/image/Modal-gallery/image 285.png" alt=""><img
-                         src="src/assets/image/Modal-gallery/image 286.png" alt=""><img
-                         src="src/assets/image/Modal-gallery/image 287.png" alt=""><img
-                         src="src/assets/image/Modal-gallery/image 288.png" alt=""><img
-                         src="src/assets/image/Modal-gallery/image 289.png" alt="">
-                 </div>
-             </div>
-         </div>
-    </div>
+        <div id="modalGallery"
+            class="fixed inset-0 items-center justify-center hidden z-50 bg-[#181818] opacity-95 target:flex">
+            <div id="" class="absolute w-full h-3/5 md:h-full flex flex-col justify-center items-center gap-4 ">
+                <a href="#mainFourthPage" class="absolute right-12 top-8 text-white"><i
+                        class="fas fa-xmark text-4xl"></i></a>
+                <div class="w-3/5 h-3/5">
+                    <img src="src/assets/image/Modal-gallery/image 294.png" alt="" class="h-full w-full object-cover">
+                </div>
+                <div class="w-3/5 md:grid gap-2 flex overflow-x-scroll md:overflow-hidden md:grid-cols-5">
+                    <img tabindex="1" src="src/assets/image/Modal-gallery/image 285.png"
+                        class="hover:ring-2 ring-gray-500 md:hover:scale-125 md:focus:scale-[400%] md:focus:transform md:focus:-translate-1/2 md:focus:absolute md:focus:top-1/2 md:focus:left-1/2"
+                        alt=""><img tabindex="1" src="src/assets/image/Modal-gallery/image 286.png"
+                        class="hover:ring-2 ring-gray-500 md:hover:scale-125 md:focus:scale-[400%] md:focus:transform md:focus:-translate-1/2 md:focus:absolute md:focus:top-1/2 md:focus:left-1/2"
+                        alt=""><img tabindex="1" src="src/assets/image/Modal-gallery/image 287.png"
+                        class="hover:ring-2 ring-gray-500 md:hover:scale-125 md:focus:scale-[400%] md:focus:transform md:focus:-translate-1/2 md:focus:absolute md:focus:top-1/2 md:focus:left-1/2"
+                        alt=""><img tabindex="1" src="src/assets/image/Modal-gallery/image 288.png"
+                        class="hover:ring-2 ring-gray-500 md:hover:scale-125 md:focus:scale-[400%] md:focus:transform md:focus:-translate-1/2 md:focus:absolute md:focus:top-1/2 md:focus:left-1/2"
+                        alt=""><img tabindex="1" src="src/assets/image/Modal-gallery/image 289.png"
+                        class="hover:ring-2 ring-gray-500 md:hover:scale-125 md:focus:scale-[400%] md:focus:transform md:focus:-translate-1/2 md:focus:absolute md:focus:top-1/2 md:focus:left-1/2"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL GALLERY -->
+    </section>
+
+
+
+    <!--end fourth page .
+     and start The fifth page -->
+    <section class="bg-[#181818] h-auto md:min-h-dvh w-full flex flex-col items-center py-4 justify-center">
+        <div class="w-[90%] md:h-dvh flex flex-col items-center justify-center gap-4 md:w-[60%] pb-4 pt-16 md:pt-0">
+            <!-- TITLE -->
+            <span class="text-white text-4xl font-bold">CHOOSE A PACKAGE</span>
+            <!-- SELECT BOX -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                <div class="flex flex-col gap-0.5">
+                    <label for="" class="text-[#939697] text-xs">Model</label>
+                    <select name="" id=""
+                        class="bg-[#252C2C] border-[1px] border-[#939697] text-[#939697] px-4 py-1 rounded-lg">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <label for="" class="text-[#939697] text-xs">Equipment</label>
+                    <select name="" id=""
+                        class="bg-[#252C2C] border-[1px] border-[#939697] text-[#939697] px-4 py-1 rounded-lg">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <label for="" class="text-[#939697] text-xs">Engine</label>
+                    <select name="" id=""
+                        class="bg-[#252C2C] border-[1px] border-[#939697] text-[#939697] px-4 py-1 rounded-lg">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <!-- TABLE BOX -->
+            <div class="md:w-[90%] w-full grid grid-rows-3 gap-2 h-[65%]">
+                <!-- ROW 1  -->
+                <div class="border-[1px] border-[#939697] rounded-lg flex flex-col md:flex-row justify-between p-4">
+                    <img src="src/assets/image/img-select.png" alt="" class="md:h-full object-cover md:w-1/4">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-white text-2xl font-bold">TANK 300</span>
+                                <span class="text-[#939697] md:text-xs">2.0 l. Petrol, Full, Automatic</span>
+                                <span class="text-white text-xl mt-3">3 649 000 ₽</span>
+                            </div>
+                            <div class="md:flex flex-col gap-1 hidden">
+                                <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
+                                        class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                                <button
+                                    class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2 md:px-20">Test
+                                    drive<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-white flex flex-col md:flex-row md:text-xs mt-1.5 w-full">
+                            <span><i class="fas fa-tag text-[#FF9549] mr-2"></i>Trade-in benefit up to 450,000
+                                ₽</span><span><i class="fas fa-gift text-[#FF9549] md:ml-4 mr-2"></i>Ceramic coating as
+                                a
+                                gift!</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 md:hidden mt-4">
+                        <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
+                                class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                        <button class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2 md:px-20">Test
+                            drive<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                    </div>
+                </div>
+                <!-- ROW 2 -->
+                <div class="border-[1px] border-[#939697] rounded-lg flex flex-col md:flex-row justify-between p-4">
+                    <img src="src/assets/image/img-select.png" alt="" class="md:h-full object-cover md:w-1/4">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-white text-2xl font-bold">TANK 300</span>
+                                <span class="text-[#939697] md:text-xs">2.0 l. Petrol, Full, Automatic</span>
+                                <span class="text-white text-xl mt-3">3 649 000 ₽</span>
+                            </div>
+                            <div class="md:flex flex-col gap-1 hidden">
+                                <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
+                                        class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                                <button
+                                    class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2 md:px-20">Test
+                                    drive<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-white flex flex-col md:flex-row md:text-xs mt-1.5 w-full">
+                            <span><i class="fas fa-tag text-[#FF9549] mr-2"></i>Trade-in benefit up to 450,000
+                                ₽</span><span><i class="fas fa-gift text-[#FF9549] md:ml-4 mr-2"></i>Ceramic coating as
+                                a
+                                gift!</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 md:hidden mt-4">
+                        <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
+                                class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                        <button class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2 md:px-20">Test
+                            drive<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                    </div>
+                </div>
+                <!-- ROW  3 -->
+                <div class="border-[1px] border-[#939697] rounded-lg flex flex-col md:flex-row justify-between p-4">
+                    <img src="src/assets/image/img-select.png" alt="" class="md:h-full object-cover md:w-1/4">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-white text-2xl font-bold">TANK 300</span>
+                                <span class="text-[#939697] md:text-xs">2.0 l. Petrol, Full, Automatic</span>
+                                <span class="text-white text-xl mt-3">3 649 000 ₽</span>
+                            </div>
+                            <div class="md:flex flex-col gap-1 hidden">
+                                <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
+                                        class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                                <button
+                                    class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2 md:px-20">Test
+                                    drive<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-white flex flex-col md:flex-row md:text-xs mt-1.5 w-full">
+                            <span><i class="fas fa-tag text-[#FF9549] mr-2"></i>Trade-in benefit up to 450,000
+                                ₽</span><span><i class="fas fa-gift text-[#FF9549] md:ml-4 mr-2"></i>Ceramic coating as
+                                a
+                                gift!</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 md:hidden mt-4">
+                        <button class="text-xs bg-[#FF9549] py-2 rounded-md md:px-20">Get an offer<i
+                                class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                        <button class="text-white text-xs rounded-md border-[1px] border-[#FF9549] py-2 md:px-20">Test
+                            drive<i class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <button class="border-[1px] border-[#939697] text-[#939697] rounded-lg px-6 py-3 w-fit">Load
+                more</button>
+        </div>
+    </section>
+
+    <!--end fifth page .
+     and start The sixth page -->
+
+    <section class="bg-[#181818] h-auto md:min-h-dvh w-full flex flex-col items-center gap-8 justify-center py-8">
+
+        <!-- PART 1 -->
+        <div class="w-[90%] md:w-3/5 flex flex-col md:flex-row gap-8">
+            <img src="src/assets/image/image 290.png" alt="" class="w-1/2">
+            <div class="flex flex-col gap-8">
+                <span class="text-white font-bold text-2xl">EXCHANGE BY TRADE-IN
+                    ON FAVORABLE TERMS</span>
+                <button class="text-xs bg-[#FF9549] py-2 rounded-md md:w-fit px-6">Send a request<i
+                        class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+            </div>
+        </div>
+
+        <!-- PART 2 -->
+        <div class="relative w-full">
+            <!-- BG IMG FOR DESKTAP -->
+            <img src="src/assets/image/BG-CAR.png" alt="" class="hidden md:flex">
+            <!-- BG IMAGE FOR MOBILE -->
+            <img src="src/assets/image/bg-car-mobile.png" alt="" class="md:hidden w-full object-cover">
+            <!-- ABSOLUTE SECTION -->
+            <div class="absolute z-10 md:-translate-y-1/2 md:top-1/2 top-[10%] p-4 md:left-[15%]  w-full md:w-fit">
+                <div class="text-white flex flex-col gap-2">
+                    <span class="font-bold text-3xl">Leave a request
+                        for a loan</span>
+                    <span class="text-xs">and get approval in 1 day!</span>
+                </div>
+
+                <div class="flex flex-col mt-6">
+                    <label for="" class="text-[#939697] text-xs">Telephone</label>
+                    <div class="flex flex-col md:flex-row gap-3">
+                        <input type="number"
+                            class="bg-[#252C2C] border-[1px] border-[#939697] text-[#939697] px-4 py-1 rounded-lg w-full md:w-fit">
+                        <button class="text-xs bg-[#FF9549] py-2 rounded-md h-fit md:w-fit px-6">Send a request<i
+                                class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="bg-[#252C2C] align-middle"><span
+                            class="text-[#939697] text-xs pl-2">I agree to the processing of personal
+                            data.</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- PART 3 -->
+        <div class="md:w-3/5 w-[90%] bg-[#1C2121] p-6 rounded-lg flex flex-col md:flex-row gap-6 justify-around">
+            <div class="md:w-2/5 flex flex-col gap-8">
+                <span class="text-white font-bold text-3xl">Individual offer
+                    for corporate clients</span>
+                <button class="text-xs bg-[#FF9549] py-2 rounded-md h-fit md:w-fit px-6">Send a request<i
+                        class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+            </div>
+            <div class="flex gap-4 items-center">
+                <img src="src/assets/image/avatar.png" alt="" class="rounded-full w-20 md:w-fit">
+                <div class="flex flex-col gap-2">
+                    <span class="text-white font-bold text-2xl">Tatyana Sannikova</span>
+                    <span class="text-[#939697] text-xs">Corporate Sales Department AVTORUS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--end sixth page .
+     and start The last  page -->
+
+    <section
+        class="bg-[#181818] h-auto md:min-h-dvh w-full flex flex-col items-center gap-8 justify-center px-[16rem] py-4">
+        <!-- MAP SECTION -->
+
+        <div class="relative">
+            <img src="src/assets/image/Map-image.png" alt="">
+            <div
+                class="absolute z-10 bg-[#1C2121] grid grid-cols-5 items-center gap-4 w-4/5 rounded-xl transform -translate-x-1/2 left-1/2 right-1/2 bottom-[5%] px-4 py-2">
+                <div class="flex flex-col col-span-2">
+                    <span class="text-[#939697] text-xs">Address</span>
+                    <span class="text-white">Yaroslavskoe shosse, property 2B, building 3 (MKAD, 95 km)</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[#939697] text-xs">Telephone</span>
+                    <span class="text-white">+7 (999) 999-99-99</span>
+                    <span class="text-[#939697] text-[0.6rem]"><i
+                            class="fas fa-circle text-green-500 text-[0.4rem] mr-[0.2rem]"></i>We are in
+                        touch</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[#939697] text-xs">Operating mode</span>
+                    <span class="text-white">Daily
+                        from 09:00 to 21:00</span>
+                </div>
+                <div>
+                    <button class="text-xs bg-[#FF9549] py-2 rounded-md h-fit md:w-fit px-6">Request a call<i
+                            class="fas fa-right-from-bracket ml-3 text-xs"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER SECTION -->
+        <footer>
+            <div class="pt-16">
+                <input type="checkbox" id="toggle" class="peer hidden">
+                <label for="toggle" class="text-white font-semibold cursor-pointer">Disclaimer <i
+                        class="fas fa-chevron-up ml-3 text-xs peer-checked:rotate-180 transform"></i></label>
+                <div class="border-b-[1px] border-[#939697] peer-checked:max-h-0 max-h-screen overflow-hidden">
+                    <p class="text-[#939697] text-xs pt-6 pb-10">
+                        TANK 300 for 3,799,000 RUB including support benefits. Price for the TANK 300 model in Adventure
+                        trim with 2.0T 4WD engine, 2023 production year, white color, including a 300,000 RUB trade-in
+                        benefit. Trade-in accepts used vehicles with minimum ownership and registration period of 6
+                        months (for TANK, Haval, and Great Wall brands - 3 months) prior to trade-in. To confirm
+                        ownership period, the owner must provide a copy of PTS, STS, or a vehicle registration card from
+                        traffic police with stamp and signature. For details, check with TANK AVTORUS sales managers.
+                        Offer is limited, not a public offer, valid from 01.04.2024.
+                        <br>
+                        TANK 500 for 5,349,000 RUB including support benefits. Price for the TANK 500 model in Adventure
+                        trim with 3.0T 4WD engine, 2023 production year, white color, including a direct 950,000 RUB
+                        benefit. For details, check with TANK AVTORUS sales managers. Offer is limited, not a public
+                        offer, valid from 01.04.2024.
+                    </p>
+                </div>
+            </div>
+            <div class="border-b-[1px] border-[#939697] flex justify-between py-10">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-white font-semibold text-xs">AVTORUS TANK Losiny Ostrov</span><span class="text-[#939697] text-[0.6rem]">Official dealer</span>
+                    </div>
+                    <span class="text-[#939697] text-xs"><i class="fas fa-location-dot text-xs mr-1"></i>Yaroslavskoe
+                        shosse, property 2B, building
+                        3 (MKAD, 95
+                        km)</span>
+                    <div class="flex flex-col gap-0.5">
+                        <span class="text-[#939697] text-[0.6rem]">Official dealer</span><span class="text-white font-semibold text-xs">OOO A AVTORUS MYTISHCHI | OGRN - 1147746695161, INN -
+                            7728881903</span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 h-fit">
+                    <div class="gap-4 items-center hidden md:flex">
+                        <div class="flex flex-col">
+                            <span class="text-white">+7 (999) 999-99-99</span>
+                            <span class="text-[#939697] text-[0.6rem]"><i
+                                    class="fas fa-circle text-green-500 text-[0.4rem] mr-[0.2rem]"></i>We are in
+                                touch</span>
+                        </div>
+                        <button class="bg-[#FF9549] h-1/2 py-0.5 px-4 rounded-lg"><i
+                                class="fas fa-phone mr-2 text-xs"></i>Request a call</button>
+                    </div>
+                    <div class="flex gap-8 justify-end">
+                        <a class="text-white text-xs"><i class="fas fa-wrench text-amber-600 mr-1"></i>Sign up for
+                            service</a>
+                        <a class="text-white text-xs"><i class="fab fa-algolia text-amber-600 mr-1"></i>Test
+                            drive</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between text-[#939697] text-xs pt-4 pb-2">
+                <span>© 2024, AVTORUS TANK</span>
+                <div class="flex justify-between gap-6">
+                    <span>Legal information</span><span>Conditions of the promotion</span>
+                </div>
+            </div>
+        </footer>
+    </section>
 
 
 </body>
