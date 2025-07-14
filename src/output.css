@@ -1175,8 +1175,10 @@
   box-sizing: border-box;
   transition: ease 1s all;
 }
-button , a {
-  cursor: pointer;
+@layer base {
+  button , a {
+    cursor: pointer;
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
